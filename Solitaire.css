@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./Background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 25px;
+    width: 25%;
+    text-align: center;
+    text-decoration: solid underline;
+    text-decoration-color: wheat;
+    color: crimson;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div>a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 2px 0px 17px rgb(102, 122, 27);
+    text-decoration: underline overline;
+}
+
+section>h1 {
+    margin: 30px 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: rgba(238, 238, 238, 0.151);
+}
+
+p {
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
+}
+
+section>a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: rgba(238, 238, 238, 0.733);
+    transition: all 0.5s ease;
+}
+
+.btnone:hover {
+    background: #00b894;
+}
+
+.btntwo {
+    background: #00b894;
+}
+
+.btntwo:hover {
+    background: rgba(238, 238, 238, 0.733);
+}
+
+.change_content:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+    text-decoration: underline white;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Mumbai";
+    }
+    20% {
+        content: "New Delhi";
+    }
+    35% {
+        content: "Hyderabad";
+    }
+    60% {
+        content: "Bangalore";
+    }
+    80% {
+        content: "Chennai";
+    }
+    100% {
+        content: "Chandigarh";
+    }
+}
